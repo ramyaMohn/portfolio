@@ -17,7 +17,6 @@ const Skill = () => {
             <ul>
           <li><Link to='/' >Home</Link></li>
           <li><Link to='/project' >Project</Link></li>
-          <li><Link to='/paper' >Papers</Link></li>
           <li><Link to='/acheive' >Acheivements</Link></li></ul>
         </nav>
         <div className='container'>
