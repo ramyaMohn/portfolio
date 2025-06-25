@@ -1,0 +1,91 @@
+/* Nav Bar Styling (Same as project.js) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hom_nav {
+  background-color: rgb(135, 26, 135);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hom_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hom_nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.hom_nav ul li a:hover {
+  color: yellow;
+}
+
+.nav-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Dropdown Section */
+.dropdown-container {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header {
+  background-color: #802880;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+}
+
+.download-btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #802880;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #a64ca6;
+}
