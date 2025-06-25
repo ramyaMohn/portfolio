@@ -14,7 +14,7 @@ const PoachingDetails = () => {
         <nav className='side_nav'>
           <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/paper'>Papers</Link></li>
+            <li><Link to='/project' >Project</Link></li>
             <li><Link to='/acheive'>Achievements</Link></li>
           </ul>
         </nav>
