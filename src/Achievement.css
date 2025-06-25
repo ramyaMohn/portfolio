@@ -59,3 +59,55 @@
   font-size: 1.05rem;
   line-height: 1.6;
 }
+
+@media screen and (max-width: 768px) {
+  .hom_nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    align-items: flex-start;
+  }
+
+  .hom_nav ul {
+    flex-direction: column;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .hom_nav ul li {
+    margin: 10px 0;
+  }
+
+  .hom_nav ul li a {
+    font-size: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .achievement-list {
+    padding: 0 15px;
+  }
+
+  .achievement-item {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hom_nav ul li a {
+    font-size: 0.95rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .achievement-item {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
