@@ -15,7 +15,6 @@ const BrainDetails = () => {
           <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/Skill'>Skill</Link></li>
-            <li><Link to='/paper'>Papers</Link></li>
             <li><Link to='/acheive'>Achievements</Link></li>
           </ul>
         </nav>
