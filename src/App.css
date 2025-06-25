@@ -355,3 +355,144 @@ justify-content: center;
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 768px) {
+  .hom_nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .skill_nav, .proj_nav {
+    font-size: 1.1rem;
+    padding: 10px;
+    height: 60px;
+  }
+
+  .side_nav {
+    width: 160px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .main-skill {
+    margin-left: 160px;
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hom_img {
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  #profile {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  #git, #linkd {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+
+  .project-detail-container {
+    padding: 20px;
+    padding-left: 180px;
+  }
+
+  .projects {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects img {
+    margin: 0 0 15px 0;
+    width: 100px;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.95rem;
+  }
+
+  .arrow-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hom_nav ul {
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .skill_nav, .proj_nav {
+    font-size: 1rem;
+    height: 50px;
+    padding: 8px;
+  }
+
+  .side_nav {
+    width: 130px;
+    font-size: 1rem;
+    padding: 10px 8px;
+  }
+
+  .main-skill {
+    margin-left: 130px;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .outer h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hom-con {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .hom_img {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #profile {
+    width: 130px;
+    height: 130px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .project-detail-container {
+    padding: 15px;
+    padding-left: 150px;
+  }
+
+  .project-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-section p,
+  .methodology-table td,
+  .methodology-table th {
+    font-size: 0.9rem;
+  }
+}
