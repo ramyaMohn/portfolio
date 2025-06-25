@@ -17,7 +17,7 @@ const Project = () => {
                   <ul>
                 <li><Link to='/' >Home</Link></li>
                 <li><Link to='/Skill' >Skill</Link></li>
-                <li><Link to='/paper' >Papers</Link></li>
+          
                 <li><Link to='/acheive' >Acheivements</Link></li></ul>
               </nav>
               <div className='container'>
