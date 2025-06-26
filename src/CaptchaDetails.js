@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import captcha from './captcha.jpg';
-import './prj.css'; // Use the shared general CSS
+import './prj.css'; 
 
 const CaptchaDetails = () => {
   return (
