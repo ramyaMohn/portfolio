@@ -14,20 +14,25 @@ import PoachingDetails from './PoachingDetails.js';
 
 function AppContent() {
   const location = useLocation();
-  const isHome=location.pathname==='/'
+  const isHome = location.pathname === '/';
+
   return (
     <div className="App">
-      {isHome &&(<header className="App-header">
-        <nav className="hom_nav">
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/Skill'>MySkill</Link></li>
-            <li><Link to='/project'>Projects</Link></li>
-            <li><Link to='/acheive'>Acheivements</Link></li>
-          </ul>
-        </nav>
-      </header>)}
-      
+      {isHome && (
+        <>
+          <div className="name-header">Ramya Mohankumar</div>
+          <header className="App-header">
+            <nav className="hom_nav">
+              <ul>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/Skill'>My Skills</Link></li>
+                <li><Link to='/project'>Projects</Link></li>
+                <li><Link to='/acheive'>Achievements</Link></li>
+              </ul>
+            </nav>
+          </header>
+        </>
+      )}
 
       <Routes>
         <Route path="/Skill" element={<Skill />} />
@@ -35,13 +40,12 @@ function AppContent() {
         <Route path="/paper" element={<Paper />} />
         <Route path="/acheive" element={<Achievement />} />
         <Route path="/project/spam" element={<SpamDetails />} />
-<Route path="/project/brain" element={<BrainDetails />} />
-<Route path="/project/captcha" element={<CaptchaDetails />} />
-<Route path="/project/poach" element={<PoachingDetails />} />
-
+        <Route path="/project/brain" element={<BrainDetails />} />
+        <Route path="/project/captcha" element={<CaptchaDetails />} />
+        <Route path="/project/poach" element={<PoachingDetails />} />
       </Routes>
 
-      {location.pathname === '/' && (
+      {isHome && (
         <>
           <div className='outer'>
             <center><h1>Portfolio</h1></center>
@@ -62,19 +66,12 @@ function AppContent() {
           <div className="hom_foot">
             <center>
               <p>Explore my projects on GitHub and connect with me on LinkedIn</p><br />
-              <a
-        href="https://github.com/ramyaMohn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-              <img id="git" src={git} alt="github" />
+              <a href="https://github.com/ramyaMohn" target="_blank" rel="noopener noreferrer">
+                <img id="git" src={git} alt="github" />
               </a>
-              <a
-        href="https://www.linkedin.com/in/ramya-mohankumar-8bbb98294/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-              <img id="linkd" src={linked} alt="linkedin" /></a>
+              <a href="https://www.linkedin.com/in/ramya-mohankumar-8bbb98294/" target="_blank" rel="noopener noreferrer">
+                <img id="linkd" src={linked} alt="linkedin" />
+              </a>
             </center>
           </div>
         </>
@@ -82,7 +79,6 @@ function AppContent() {
     </div>
   );
 }
-
 
 function App() {
   return (
