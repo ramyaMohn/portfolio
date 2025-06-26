@@ -1,0 +1,202 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #fce3ff, #e4c1f9);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Top Navbar */
+.skill_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(83, 1, 83);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Sidebar */
+.side_nav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 60px);
+  background-color: rgb(170, 9, 170);
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 1.3rem;
+  z-index: 999;
+}
+
+.side_nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side_nav li {
+  margin-bottom: 20px;
+}
+
+.side_nav li a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.side_nav li a:hover {
+  color: yellow;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Main Skill Content */
+.main-skill {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: row;
+  background: transparent;
+}
+
+/* Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  flex: 1;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(128, 0, 128, 0.3);
+}
+
+/* Skill Boxes */
+.skill-box {
+  background-color: #fff0fb;
+  border-left: 6px solid #a900a9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(105, 14, 105, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(90, 0, 90, 0.4);
+  background-color: #ffeaff;
+}
+
+.skill-box dt {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  color: #4B004B;
+}
+
+.skill-box dd {
+  color: #330033;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.skill-foot {
+  background-color: rgb(83, 1, 83);
+  color: beige;
+  text-align: center;
+  padding: 20px;
+}
+
+#git,
+#linkd {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+#git:hover,
+#linkd:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .side_nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+   
+  }
+
+  .side_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+ 
+  .main-skill {
+  flex-direction: column;
+  margin: 80px 10px 20px 10px;
+}
+
+
+  .container {
+    padding: 20px;
+  }
+
+  #git,
+  #linkd {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill_nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-box dt {
+    font-size: 1.1rem;
+  }
+
+  .skill-box dd {
+    font-size: 0.95rem;
+  }
+
+  .main-skill {
+    margin-top: 130px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
