@@ -25,7 +25,7 @@ const Achievement = () => {
   </div>
 
   <div className="achievement-item">
-    <strong>2nd Prize</strong> – Paper presentation on <em>"AI-Based CAPTCHA Refinement"</em> at the <strong>Exodia event</strong> held at <strong>[Your College Name]</strong>.
+    <strong>2nd Prize</strong> – Paper presentation on <em>"AI-Based CAPTCHA Refinement"</em> at the <strong>Exodia event</strong> held at <strong>Kongu Engineering College</strong>.
   </div>
 
   <div className="achievement-item">
