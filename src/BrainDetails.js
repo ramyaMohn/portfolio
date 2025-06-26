@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import brain from './brainstroke.jpg';
-import './prj.css'; // Reusable project styles
+import './prj.css'; 
 
 const BrainDetails = () => {
   return (
