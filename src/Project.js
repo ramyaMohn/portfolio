@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './project.css'; // Use general responsive CSS
+import './project.css';
 import mail from './mail.jpeg';
 import brain from './brainstroke.jpg';
 import captcha from './captcha.jpg';
