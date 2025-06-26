@@ -177,7 +177,7 @@
   }
 
   .project-list {
-    grid-template-columns: 1fr; /* single column for mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
